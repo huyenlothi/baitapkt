@@ -14,7 +14,11 @@
     let X;
     if ( a == 0 ) {
         if (b == 0) {
-            alert("phuong trinh vo nghiem");
+            if (c==0) {
+            alert("phuong trinh vo so nghiem");
+            } else {
+                alert("phuong trinh vo nghiem")
+            }
         } else {
             X = -c / b;
             alert("phuong trinh co nghiem la" + X);
@@ -28,7 +32,7 @@
                 if (Delta > 0 ) {
                     X1 = (-b + Math.sqrt(Delta)) / 2*a;
                     X2 =(-b - Math.sqrt(Delta)) / 2*a;
-                    alert("phuong trinh co nghiem la X1 = " + X1 +"X2 = "+ X2);
+                    alert("phuong trinh co nghiem la X1 = " + X1 +" X2 = "+ X2);
                 } else {
                     alert(" phuong trinh vo nghiem");
                 }
