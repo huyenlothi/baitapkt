@@ -7,26 +7,28 @@
 <body>
 <script>
     let date = prompt("nhap vao")
-    if (date ==1) {
+    if (date <1 || date >7) {
+        alert("ban nhap lai trong khoang tu 1 den 7")
+    } else if (date ==1) {
         alert("chu nhat");
-    }else {
-        if (date ==2) {
-            alert("thu hai");
-        } else {
-            if (date == 3) {
-                alert("thu ba");
             }else {
-                if (date == 4) {
-                    alert("thu tu");
+                if (date ==2) {
+                    alert("thu hai");
+                } else {
+                    if (date == 3) {
+                        alert("thu ba");
                 }else {
-                    if (date==5) {
-                        alert("thu nam");
-                    }else {
-                        if (date == 6) {
-                            alert("thu sau");
-                        } else {
-                            if (date == 7) {
-                                alert("thu bay");
+                    if (date == 4) {
+                        alert("thu tu");
+                    } else {
+                        if (date==5) {
+                            alert("thu nam");
+                        }else {
+                            if (date == 6) {
+                                alert("thu sau");
+                            } else {
+                                if (date == 7) {
+                                    alert("thu bay");
                             }
                         }
                     }
@@ -34,6 +36,7 @@
             }
         }
     }
+
 </script>
 </body>
 </html>
