@@ -13,17 +13,18 @@
     let X2;
     let X;
     if ( a == 0 ) {
-        if ( b == 0) {
+        if (b == 0) {
             alert("phuong trinh vo nghiem");
         } else {
             X = -c / b;
-            alert("phuong trinh co nghiem la" + X );
+            alert("phuong trinh co nghiem la" + X);
+        }
+    } else {
+        let Delta = b * b - 4 * a * c;
+        if (Delta == 0) {
+            X = -b / 2 * a;
+            alert("phuong trinh co nghiem kep X1 = X2 = " + X);
         } else {
-            let Delta = b*b -4*a*c;
-            if (Delta == 0) {
-                X = -b / 2*a;
-                alert("phuong trinh co nghiem kep X1 = X2 = " + X );
-            } else {
                 if (Delta > 0 ) {
                     X1 = (-b + Math.sqrt(Delta)) / 2*a;
                     X2 =(-b - Math.sqrt(Delta)) / 2*a;
@@ -32,8 +33,6 @@
                     alert(" phuong trinh vo nghiem");
                 }
             }
-
-        }
     }
 </script>
 </body>
