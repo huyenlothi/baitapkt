@@ -8,11 +8,14 @@
 <script>
     let a =parseInt(prompt("nhap so a"));
     let b =parseInt(prompt("nhap so b"));
-    if (a%b==0) {
-        alert(a + " chia het cho " + b);
-    } else {
-        alert(a + " khong chia het cho "+ b);
-    }
+    // if (a%b==0) {
+    //     alert(a + " chia het cho " + b);
+    // } else {
+    //     alert(a + " khong chia het cho "+ b);
+    // }
+    let result = a%b==0 ? (a + " chia het cho " + b) : (a + " khong chia het cho "+ b);
+    alert(result);
+
 </script>
 </body>
 </html>
