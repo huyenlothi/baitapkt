@@ -7,10 +7,21 @@
 <body>
 <script>
     let a = parseInt(prompt("nhap so nguyen a?"));
-    if ( a >0 ) {
-        alert("so duong");
-    } else if( a < 0 ) {
-        alert("so am");
+    // if (a==0) {
+    //        alert("moi ban nhap lai so khac 0");
+    // } else {
+        // if ( a >0 ) {
+        //     alert("so duong");
+        // } else if( a < 0 ) {
+        //     alert("so am");
+        // }
+    // }
+
+    if (a==0) {
+        alert("moi ban nhap lai so khac 0");
+    }else {
+        let result = a > 0 ?  "so duong" : "so am";
+        alert(result);
     }
 </script>
 </body>
